@@ -24,7 +24,7 @@ public class FormSubscriber {
             }
         }
     });
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm.SSS");
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
     private static final String topicName = "Tes";
     private static KafkaConsumer<String, String> consumer;
     private static final DefaultTableModel dtm = new DefaultTableModel(new Object[]{"", "", ""}, 1);
@@ -61,8 +61,8 @@ public class FormSubscriber {
 
     private void createUIComponents() {
         table1 = new JTable(dtm);
-        table1.getColumnModel().getColumn(0).setPreferredWidth(50);
-        table1.getColumnModel().getColumn(1).setPreferredWidth(50);
-        table1.getColumnModel().getColumn(2).setPreferredWidth(280);
+        table1.getColumnModel().getColumn(0).setPreferredWidth(65);
+        table1.getColumnModel().getColumn(1).setPreferredWidth(65);
+        table1.getColumnModel().getColumn(2).setPreferredWidth(270);
     }
 }
